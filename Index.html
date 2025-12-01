@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwong Jun Jien – Game Artist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ======= HEADER CARD ======= -->
+    <div class="header-card">
+
+        <!-- Profile Image -->
+        <div class="profile-pic-wrapper">
+            <img id="profilePreview" src="Image/Profile_picture/Profile_picture.jpg" alt="Profile Picture">
+            <input type="file" id="profileUpload" accept="image/*">
+        </div>
+
+        <!-- Name + Title (NOW aligned properly beside picture) -->
+        <div class="name-title">
+            <h1>Kwong Jun Jien</h1>
+            <p>Game Artist • Game Development Student</p>
+        </div>
+
+        <!-- ======= HEADER NAVIGATION ======= -->
+        <nav class="nav-links">
+            <a href="index.html">PROFILE</a>
+            <a href="project.html">PROJECT</a>
+        </nav>
+    </div>
+
+
+    <!-- ======= ABOUT SECTION ======= -->
+    <section id="about" class="section">
+        <h2><i class="ri-gamepad-line"></i> About Me</h2>
+
+        <p class="center-text">
+            I'm <b>Kwong Jun Jien</b>, a game development student who loves creating clean and polished game art. 
+            I specialize in pixel art characters, UI assets, and 3D game-ready models using Blender and Aseprite. 
+            I enjoy exploring different art styles, experimenting with lighting, colors, and animation techniques, 
+            and constantly improving my workflow to create visually appealing and functional game assets. 
+            My goal is to become a versatile game artist capable of contributing to both 2D and 3D projects while 
+            developing my own unique creative style.
+        </p>
+    </section>
+
+
+
+
+    <!-- ======= SKILLS SECTION ======= -->
+    <section id="skills" class="section">
+        <h2><i class="ri-star-smile-line"></i> Skills</h2>
+
+        <div class="skill-grid">
+            <div class="skill-card">Pixel Art</div>
+            <div class="skill-card">UI Design</div>
+            <div class="skill-card">3D Modelling</div>
+            <div class="skill-card">Level Design</div>
+            <div class="skill-card">Game Art Production</div>
+            <div class="skill-card">Animation Basics</div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ======= SOFTWARE SECTION ======= -->
+    <section id="software" class="section">
+        <h2><i class="ri-edit-2-line"></i> Software Proficiency</h2>
+
+        <div class="software-grid">
+
+            <div class="soft-card">
+                <h3>Unity</h3>
+                <p>2 years</p>
+            </div>
+
+            <div class="soft-card">
+                <h3>Blender</h3>
+                <p>4 months</p>
+            </div>
+
+            <div class="soft-card">
+                <h3>Aseprite</h3>
+                <p>1 year</p>
+            </div>
+
+            <div class="soft-card">
+                <h3>Adobe Photoshop</h3>
+                <p>1 year</p>
+            </div>
+
+            <div class="soft-card">
+                <h3>GitHub</h3>
+                <p>1 year</p>
+            </div>
+
+            <div class="soft-card">
+                <h3>After Effects</h3>
+                <p>2 months</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- ======= CONTACT SECTION ======= -->
+    <section id="contact" class="section">
+        <h2><i class="ri-contacts-line"></i> Contact</h2>
+
+        <div class="contact-grid">
+
+            <p><i class="ri-phone-line"></i> +60147532182</p>
+
+            <p><i class="ri-mail-line"></i> junjien4830@gmail.com</p>
+
+            <p><i class="ri-terminal-box-line"></i> 
+                <a href="https://jun-jien.itch.io/" target="_blank">Itch.io Portfolio</a>
+            </p>
+
+        </div>
+    </section>
+
+</div>
+
+
+<!-- ======= PROFILE IMAGE PREVIEW SCRIPT ======= -->
+<script>
+    document.getElementById("profileUpload").addEventListener("change", function () {
+        const file = this.files[0];
+        if (file) {
+            document.getElementById("profilePreview").src = URL.createObjectURL(file);
+        }
+    });
+</script>
+
+</body>
+</html>

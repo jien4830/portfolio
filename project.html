@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects – Kwong Jun Jien</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ======= SAME HEADER AS INDEX.HTML ======= -->
+    <div class="header-card">
+
+        <!-- Profile Image -->
+        <div class="profile-pic-wrapper">
+            <img id="profilePreview" src="Image/Profile_picture/Profile_picture.jpg" alt="Profile Picture">
+            <input type="file" id="profileUpload" accept="image/*">
+        </div>
+
+        <!-- Name -->
+        <div class="name-title">
+            <h1>Kwong Jun Jien</h1>
+            <p>Game Artist • Game Development Student</p>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav-links">
+            <a href="index.html">PROFILE</a>
+            <a href="project.html">PROJECT</a>
+        </nav>
+    </div>
+
+
+
+    <!-- PROJECT SECTION -->
+    <section class="section">
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-box">
+                <h3>Computer Game Design: Production and Testing</h3>
+                <p>UI Design</p>
+                <a class="view-btn" href="project1.html">VIEW</a>
+            </div>
+
+            <div class="project-box">
+                <h3>Basic 3D Computer Character Modelling</h3>
+                <p>3D Model</p>
+                <a class="view-btn" href="project2.html">VIEW</a>
+            </div>
+
+            <div class="project-box">
+                <h3>Computer Game Design: High Concept & Preproduction</h3>
+                <p>Pixel Art Asset</p>
+                <a class="view-btn" href="project3.html">VIEW</a>
+            </div>
+
+            <div class="project-box">
+                <h3>Digital Image Production</h3>
+                <p>Brochure</p>
+                <a class="view-btn" href="project4.html">VIEW</a>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- SAME PROFILE IMAGE PREVIEW SCRIPT -->
+<script>
+    document.getElementById("profileUpload").addEventListener("change", function () {
+        const file = this.files[0];
+        if (file) {
+            document.getElementById("profilePreview").src = URL.createObjectURL(file);
+        }
+    });
+</script>
+
+</body>
+</html>

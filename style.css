@@ -1,0 +1,369 @@
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1F1F1F;
+    color: #F5F5F5;
+}
+
+.container {
+    width: 92%;
+    max-width: 1150px;
+    margin: 40px auto;
+}
+
+
+
+/* ==========================================================
+   HEADER CARD
+   ========================================================== */
+.header-card {
+    background: #FF9E57;
+    padding: 25px 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px; /* <-- added so name sits properly beside image */
+}
+
+/* Profile Image */
+.profile-pic-wrapper img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+}
+
+.profile-pic-wrapper input {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 130px;
+    height: 130px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Name Section */
+.name-title h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #1F1F1F;
+}
+
+.name-title p {
+    margin: 3px 0 0;
+    font-size: 17px;
+    color: #1F1F1F;
+    font-weight: bold;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1F1F1F;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+
+
+/* ==========================================================
+   SECTIONS
+   ========================================================== */
+.section {
+    padding: 70px 0;
+    max-width: 1050px;
+    margin: auto;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    color: #FF9E57;
+}
+
+/* About Me paragraph */
+.center-text {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.85;
+    text-align: justify;
+}
+
+
+
+/* ==========================================================
+   SKILL CARDS — wider
+   ========================================================== */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.skill-card {
+    background: #2A2A2A;
+    padding: 28px;
+    border-radius: 14px;
+    border: 2px solid #6EC1E4;
+    font-size: 20px;
+    transition: 0.25s;
+}
+
+.skill-card:hover {
+    transform: scale(1.06);
+    border-color: #F06292;
+}
+
+
+
+/* ==========================================================
+   SOFTWARE CARDS
+   ========================================================== */
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.soft-card {
+    background: #2A2A2A;
+    padding: 32px;
+    border-radius: 14px;
+    border-left: 6px solid #FF9E57;
+    text-align: left;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.soft-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+
+
+/* ==========================================================
+   CONTACT SECTION
+   ========================================================== */
+.contact-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    font-size: 19px;
+}
+
+.contact-grid p {
+    margin: 5px 0;
+}
+
+.contact-grid a {
+    color: #6EC1E4;
+    text-decoration: none;
+}
+
+.contact-grid a:hover {
+    color: #F06292;
+}
+
+
+
+/* ==========================================================
+   PROJECT PAGE
+   ========================================================== */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-box {
+    background: #2A2A2A;
+    padding: 30px;
+    border-radius: 14px;
+    border-left: 6px solid #FF9E57;
+    text-align: left;
+}
+
+.project-box h3 {
+    margin: 0 0 10px;
+    color: #FF9E57;
+    font-size: 20px;
+}
+
+.project-box p {
+    margin: 0 0 20px;
+    opacity: 0.8;
+}
+
+.view-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #FF9E57;
+    color: #1F1F1F;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-btn:hover {
+    opacity: 0.7;
+}
+
+/* ==========================================================
+   PROJECT IMAGE BOXES (UNIFORM SIZE)
+   ========================================================== */
+.project-image-section {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* Each image is inside a clean rounded box */
+.proj-box {
+    background: #2A2A2A;
+    padding: 18px;
+    border-radius: 12px;
+    border: 2px solid #FF9E57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj-box {
+    background: #1d1d1d;
+    border: 2px solid #FF9E57;
+    padding: 15px;
+    border-radius: 12px;
+    width: 340px;               /* bigger box */
+    height: auto;               /* auto height so text fits */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px;
+}
+
+.proj-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.img-label {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ========== ONLY FOR PROJECT 1 PAGE ========== */
+.proj-small {
+    width: 250px !important;     /* smaller box */
+    padding: 12px !important;
+    margin: 12px auto !important;
+}
+
+.proj-small .proj-img {
+    width: 100%;
+    height: auto;
+}
+
+.proj-small .img-label {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Project Image Grid */
+.project-image-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+    justify-items: center;
+}
+
+.proj-box {
+    width: 240px;
+    background: #242424;
+    border: 2px solid #FF9E57;
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.proj-img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.proj-caption {
+    font-size: 15px;
+    color: #ffffff;
+    margin-top: 4px;
+}
+
+/* ===== ONLY FOR PROJECT 2 (4 centered boxes, 2 rows) ===== */
+.project2-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   /* 2 on top, 2 at bottom */
+    gap: 30px;
+    justify-items: center;                   /* center horizontally */
+    margin-top: 35px;
+}
+/* =============================
+   PROJECT 1 — FIXED LAYOUTS
+   ============================= */
+
+/* 3 UP, 2 DOWN for UI section */
+.project1-ui-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
+    margin-top: 25px;
+}
+
+.project1-ui-grid .proj-box {
+    width: 240px;
+}
+
+/* 2 UP, 2 DOWN for Cutscene section */
+.project1-cutscene-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    justify-items: center;
+    margin-top: 25px;
+}
+
+.project1-cutscene-grid .proj-box {
+    width: 240px;
+}
